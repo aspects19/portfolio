@@ -1,0 +1,157 @@
+@media only screen and (min-width: 768px) {
+    .reviews-container {
+        margin: 10px 30px 40px 70px;
+        display: flex;
+        border-radius: 19px;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        margin-left: 70px;
+        position: relative; 
+    }
+    .reviews {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+        scroll-snap-type: x mandatory; 
+        overflow-x: auto;
+    }
+
+    .review {
+        padding: 0 9px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 29px rgba(0, 0, 0, 0.418);
+        margin:10px 50%;
+        width: 70%;
+        flex-shrink: 0; 
+        scroll-snap-align: center; 
+        font-size: 20px;
+    }
+
+    .reviewer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 8px 8px 0;
+    }
+
+
+    .prev-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute; 
+        top: 140px; 
+        left: 10%; 
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: none;
+        
+    }
+
+    .next-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute; 
+        top: 140px; 
+        right: 10%; 
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: none;
+        
+    }
+
+
+
+    .reviews::-webkit-scrollbar {
+        display: none;
+    }
+
+    .reviews {
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+    }
+}
+
+/* ---------FOR SMALL DEVICES / ANDROID---------*/
+@media only screen and (max-width: 768px) {
+    .reviews-container {
+        overflow: hidden;
+        position: relative; 
+        margin: 50px 0;
+    }
+
+    .reviews {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: nowrap;
+        scroll-snap-type: x mandatory; 
+        overflow-x: auto;
+    }
+
+    .review {
+        padding: 0 9px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.006);
+        margin:10px 30%;
+        width: 70%;
+        flex-shrink: 0; 
+        scroll-snap-align: center; 
+        font-size: .6rem;
+    }
+
+    .reviewer {
+        font-size: clamp(.1rem, .5rem, 1rem);
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 8px 8px 0;
+    }
+
+
+    .prev-button {
+        background-color: #b17cb159;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute; 
+        top: 50%;
+        left: 5%; 
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: none;
+        
+    }
+
+    .next-button {
+        background-color: #b17cb159;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute; 
+        top: 50%; 
+        right: 5%; 
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: none;
+        
+    }
+
+    .review-text {
+        font-size: clamp(.1rem, .7rem, 1.5rem);
+    }
+
+    .reviews::-webkit-scrollbar {
+        display: none;
+    }
+
+    .reviews {
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+    }
+    
+}

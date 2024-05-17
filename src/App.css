@@ -1,0 +1,50 @@
+@media only screen and (min-width: 768px) {  
+    .app {
+        color: #88bcffcc;
+        width: inherit;
+        padding: 3rem 0;
+        background-color: #100825;
+    }
+
+    h1 {
+        display: flex;
+        font-size: 30px;
+        margin: 0 auto;
+        color: #4093ff;
+        font-weight: 1000;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin: 0 auto;
+        margin-bottom: .3rem;
+        text-decoration: underline; 
+        color:  #88bbff;;
+    }
+}
+/* ---------FOR SMALL DEVICES / ANDROID---------*/
+@media only screen and (max-width: 768px) {
+    .app {
+        color: #88bcffcc;
+        width: inherit;
+        padding: 3rem 0;
+        background-color: #100825;
+    }
+
+    h1 {
+        display: flex;
+        font-size: 19px;
+        margin: 0 auto;
+        color: #4093ff;
+        font-weight: 1000;
+        justify-content: center;
+    }
+
+    h2 {
+        margin: 0 auto;
+        margin-bottom: .3rem;
+        text-decoration: underline; 
+        color:  #88bbff;;
+    }
+}

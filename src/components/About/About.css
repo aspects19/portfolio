@@ -1,0 +1,233 @@
+@media only screen and (min-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .info {
+        display: flex;
+        margin: 2dvh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-info {
+        
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        font-size: 15px;
+        padding: 3px;
+        border-radius: 20px;
+        justify-content: space-between;
+    }
+
+    .about-me-text {
+        padding: .3dvw;
+        margin: .9dvw 6dvw;
+        font-size: 2.3dvw;
+    }
+
+    .about-buttons {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .cv-download-btn {
+        font-size: 1.5dvw;
+        background-color: #ff82ff86;
+        margin: 4px auto;
+        margin-right: 6px;
+        height: 4dvw;
+        width: 15dvw;
+        bottom: 0px;
+        border: 0;
+        border-radius: 20px;
+        color: #e6e6e6;
+        cursor: pointer;
+    }
+
+    .hire-me-btn {
+        font-size: 1.5dvw;
+        border: 1px solid #fc9afca2;
+        background-color: transparent;
+        margin: 4px auto;
+        height: 4dvw;
+        width: 15dvw;
+        bottom: 0px;
+        color: #fc9afca2;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .skill-graphs {
+        padding-top: 30px;
+        width: 60dvw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(120px, 1fr));
+        row-gap: 10px;
+    }
+
+    .skill-graph {
+        background-color: rgba(255, 255, 255, 0.006);
+
+        padding: 7px;
+        margin: 5px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-graph p {
+        margin-top: 10px;
+    }
+
+    .section-3 {
+        margin-top: 40px;
+        margin-left: 30px;
+        display: grid;
+    }
+
+    .achievements {
+        padding-top: 9px;
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .achievement {
+        margin: 0.5rem;
+        padding: .7rem;
+        border-radius: .3rem;
+        background-color: rgba(255, 255, 255, 0.006);
+    }
+    
+}
+
+/* ---------FOR SMALL DEVICES / ANDROID---------*/
+@media only screen and (max-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .info {
+        display: flex;
+        margin: 2dvh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-info {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        font-size: 15px;
+        padding: 3px;
+        border-radius: 20px;
+        justify-content: space-between;
+    }
+
+    .about-me-text {
+        padding: .3dvw;
+        margin: .9dvw 6dvw;
+        font-size: 12px;
+    }
+
+    .about-buttons {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .cv-download-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        background-color: #ff82ff86;
+        margin: 4px auto;
+        margin-right: 6px;
+        height: 25px;
+        width: 90px;
+        bottom: 0px;
+        border: 0;
+        border-radius: 20px;
+        color: #e6e6e6;
+        cursor: pointer;
+    }
+
+    .hire-me-btn {
+        font-size: 12px;
+        border: 1px solid #fc9afca2;
+        background-color: transparent;
+        margin: 4px auto;
+        height: 25px;
+        width: 90px;
+        bottom: 0px;
+        color: #fc9afca2;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .skill-graphs {
+        padding:  0 6dvw ;
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(105px, 1fr));
+        row-gap: 10px;
+    }
+
+    .skill-graph {
+        background-color: rgba(255, 255, 255, 0.006);
+
+        padding: 7px;
+        margin: 5px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-graph p {
+        margin-top: 10px;
+    }
+
+    .section-3 {
+        margin-top: 40px;
+        margin-left: 30px;
+        display: grid;
+    }
+
+    .achievements {
+        padding-top: 9px;
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .achievement {
+        margin: 0.5rem;
+        padding: .7rem;
+        border-radius: .3rem;
+        background-color: rgba(255, 255, 255, 0.006);
+    }
+    
+}

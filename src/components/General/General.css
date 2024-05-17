@@ -1,0 +1,72 @@
+@media only screen and (min-width: 768px) {
+    .nav-bar {
+        position: fixed;
+        top: 2px;
+        left: 4px;
+        right: 4px;
+        background-color:#10082565;
+        backdrop-filter: blur(3px);
+        z-index: 999;
+    }
+
+    .sidebar{
+        font-size: 2dvw;
+        font-weight: 800;
+        height: 37px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-left: 25vw;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .humberger {
+        display: none;
+    }
+
+    .menu-text {
+        cursor: pointer;
+    }
+
+} 
+
+/* ---------FOR SMALL DEVICES / ANDROID---------*/
+@media only screen and (max-width: 768px) {
+    .humberger {
+        size: 40px;
+        z-index: 9999;
+        position: fixed;
+        top: 20px;
+        left: 10px;
+        margin-bottom: 40px;
+    }
+
+    .sidebar-active {
+        z-index: 999;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #ffffff;
+        font-size: 40px;
+        align-items: center;
+        backdrop-filter: blur(6px);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100vdh;
+        height: 100vdh;
+        padding: 170px 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .menu-text {
+        cursor: pointer;
+    }
+    
+}

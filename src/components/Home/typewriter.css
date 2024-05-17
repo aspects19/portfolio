@@ -1,0 +1,114 @@
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 4dvw;
+    text-align: center;
+    padding: 0;
+    color: #88bbff;
+    text-align: left;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+
+  }
+
+}
+
+h3 {
+  padding: 0;
+  color: #88bbff;
+  text-align: left;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+}
+
+
+@keyframes typing {
+
+  0.0000%, 28.7168% { content: ""; }
+  0.5128%, 28.2040% { content: "H"; }
+  1.0256%, 27.178% { content: "Hi"; }
+  1.5384%, 27.178% { content: "Hi👋 "; }
+  2.0512%, 26.665% { content: "Hi👋 I"; }
+  2.564%, 26.1566% { content: "Hi👋 I'"; }
+  3.0768%, 25.640% { content: "Hi👋 I'm"; }
+  4.1024%, 25.127% { content: "Hi👋 I'm "; }
+  4.6152%, 24.1016% { content: "Hi👋 I'm J"; }
+  5.128%, 23.588% { content: "Hi👋 I'm Je"; }
+  5.6408%, 23.070% { content: "Hi👋 I'm Jef"; }
+  6.1536%, 22.5632% { content: "Hi👋 I'm Jeff"; }
+  6.6664%, 22.0504% { content: "Hi👋 I'm Jeff A"; }
+  7.1792%, 21.5376% { content: "Hi👋 I'm Jeff Am"; }
+  7.692%, 21.0248% { content: "Hi👋 I'm Jeff Ame"; }
+  8.2048%, 20.512% { content: "Hi👋 I'm Jeff Amen"; }
+  8.7176%, 19.999% { content: "Hi👋 I'm Jeff Ameny"; }
+  9.2304%, 19.4864% { content: "Hi👋 I'm Jeff Amenya"; }
+  9.7432%, 18.9736% { content: "Hi👋 I'm Jeff Amenya."; }
+
+  30.00%, 51.2791% { content: ""; }
+  31.5105%, 50.1595% { content: "a"; }
+  31.021%, 50.647% { content: "a "; }
+  31.5315%, 50.136% { content: "a w"; }
+  32.042%, 49.626% { content: "a we"; }
+  32.5525%, 49.115% { content: "a web"; }
+  33.063%, 48.605% { content: "a web "; }
+  33.5735%, 48.0945% { content: "a web d"; }
+  34.084%, 47.584% { content: "a web de"; }
+  34.5945%, 47.0735% { content: "a web dev"; }
+  35.105%, 46.563% { content: "a web deve"; }
+  35.6155%, 46.0525% { content: "a web devel"; }
+  36.126%, 45.542% { content: "a web develo"; }
+  36.126%, 45.0315% { content: "a web develop"; }
+  36.6365%, 44.521% { content: "a web develope"; }
+  37.147%, 44.010% { content: "a web developer"; }
+  37.6575%, 43.50% { content: "a web developer "; }
+
+  54.6977%, 75.2096% { content: ""; }
+  55.207%, 74.6991% { content: "."; }
+  55.718%, 74.1886% { content: ".."; }
+  56.2285%, 73.6781% { content: ".. "; }
+  56.739%, 73.1676% { content: ".. a"; }
+  57.249%, 72.6571% { content: ".. a "; }
+  57.760%, 72.1465% { content: ".. a f"; }
+  58.2705%, 71.6361% { content: ".. a fr"; }
+  58.7810%, 71.1255% { content: ".. a fre"; }
+  59.2915%, 70.6151% { content: ".. a free"; }
+  59.802%, 70.1045% { content: ".. a freel"; }
+  60.3125%, 69.5941% { content: ".. a freela"; }
+  60.823%, 69.0836% { content: ".. a freelan"; }
+  61.3335%, 68.5731% { content: ".. a freelanc"; }
+  61.844%, 68.0626% { content: ".. a freelance"; }
+  62.00%, 67.5521% { content: ".. a freelancer"; }
+
+
+  78.1174%, 96.8605% { content: "."; }
+  78.6279%, 95.8395% { content: ".."; }
+  79.1383%, 95.3290% { content: "..a"; }
+  80.1594%, 94.8185% { content: "..a "; }
+  80.6699%, 94.308% { content: "..a r"; }
+  81.1804%, 93.7975% { content: "..a re"; }
+  81.6909%, 93.287% { content: "..a rea"; }
+  82.2013%, 92.7765% { content: "..a reac"; }
+  82.7119%, 92.266% { content: "..a react"; }
+  83.7329%, 91.7555% { content: "..a react d"; }
+  84.2434%, 91.2450% { content: "..a react de"; }
+  84.7653%, 90.750% { content: "..a react dev"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}

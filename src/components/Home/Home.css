@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px) {
+    .home-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+        padding-left: 60px;
+    }
+
+    .overview {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top, #100825, transparent 40%);
+        pointer-events: none;
+    }
+
+    .avatar img {
+        margin-bottom: 10dvh;
+        box-shadow: 0px 40px 300px rgba(101, 124, 128, 0.521);
+        height: 25dvw;
+        border-radius: 50%;  
+    }
+
+    .description {
+        margin: 0 auto;
+        max-width: 100vmin;
+        display: inline-block;
+        white-space: nowrap;
+    }
+}
+
+/* ---------FOR SMALL DEVICES / ANDROID---------*/
+@media only screen and (max-width: 768px) {
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;      
+    }
+
+    .overview {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top, #100825, transparent 40%);
+        pointer-events: none;
+    }
+
+    .avatar img {
+        margin-bottom: 8dvh;
+        box-shadow: 0px 40px 300px rgba(101, 124, 128, 0.521);
+        height: 150px;
+        border-radius: 50%;  
+    }
+
+    .description {
+        margin: 0;
+        max-width: 100vmin;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+}
