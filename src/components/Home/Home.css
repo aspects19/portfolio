@@ -17,9 +17,10 @@
     }
 
     .avatar img {
-        margin-bottom: 10dvh;
+        margin-top: 5dvw;
+        margin-bottom: 7dvh;
         box-shadow: 0px 40px 300px rgba(101, 124, 128, 0.521);
-        height: 25dvw;
+        height: 17dvw;
         border-radius: 50%;  
     }
 
