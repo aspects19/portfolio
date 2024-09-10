@@ -1,6 +1,7 @@
 {
   "name": "portofolio",
   "version": "0.1.0",
+  "description": "My own portfolio built using React and pure CSS",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
