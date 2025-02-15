@@ -1,14 +1,24 @@
+import Home from './components/Home';
+import General from './components/General';
+import Works from './components/Works';
+import Contacts from './components/Contacts';
+import Skills from './components/Skills';
+import Footer from './components/Footer';
 
-const App = () => {
 
+function App() {
   return (
-    <>
-      <div className="flex items-center justify-center  ">
-        <p className="p-5">
-          Initial screen after setup
-        </p>
-      </div>
-    </>
+
+    <div className="">
+        <Home/> 
+        <General/>
+        <Skills/>
+        <Contacts/>
+        <Works/>
+        <Footer/>
+
+    </div>
+    
   )
 }
 
