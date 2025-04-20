@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
     return (
-        <div className="app text-gray-200 pl-3 ">
+        <div className="app bg-black text-gray-200 pl-3 ">
              <General/>
              <Home/> 
              <About/> 

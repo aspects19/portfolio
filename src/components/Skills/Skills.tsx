@@ -26,14 +26,14 @@ function Skills() {
     },
   ];
 
-  function SkillCard({ icon, title, description }) {
+  function SkillCard({ icon , title, description }) {
     return (
-      <div className='bg-gray-500/10 flex flex-col items-center'>
-        <div className='skill-icon'>
-          <img className='skill-icon-icon' src={icon} alt={title} />
+      <div className='bg-gray-500/10 flex flex-col items-center p-6'>
+        <div>
+          <img className=' h-15 mx-0 my-4' src={icon} alt={title} />
         </div>
-        <div className='skill-description'>
-          <h2>{title}</h2>
+        <div>
+          <h2 className=" w-full text-center text-[16px] font-bold">{title}</h2>
           {description}
         </div>
       </div>
@@ -42,8 +42,8 @@ function Skills() {
 
   return (
     <div className='m-12' id='skills'>
-      <h1>Skills</h1>
-      <div className='skills'>
+      <h1 className=" w-full text-center text-2xl pb-2 font-bold">Skills</h1>
+      <div className='grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 '>
         {skillsData.map((skill, index) => (
           <SkillCard key={index} {...skill} />
         ))}
