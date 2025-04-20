@@ -1,4 +1,3 @@
-import "./Skills.css";
 import React from 'react';
 
 
