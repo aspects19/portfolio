@@ -1,8 +1,9 @@
-import  {useState} from 'react';
+import React, {useState} from 'react';
 import { RxHamburgerMenu} from 'react-icons/rx';
 import {IoMdClose} from 'react-icons/io'
+import './Navigation.css'
 
-function General() {
+function Navigation() {
     const IconSize =  25;
     const [collapsed, setCollapsed] = useState(false);
 
@@ -28,22 +29,22 @@ function General() {
     <div className='humberger' onClick={handleCollapse}>
       {collapsed ? <IoMdClose size={IconSize}/> : <RxHamburgerMenu size={IconSize} />}</div>
     <div className={collapsed ? 'sidebar-active' : 'sidebar'}>
-      <div className='menu-text' onClick={() => scrollToTarget('home')}>
+      <div className='menu- transition-colors' onClick={() => scrollToTarget('home')}>
         <span >Home</span>
       </div>
-      <div className='menu-text' onClick={() => scrollToTarget('about')}>
+      <div className='menu- transition-colors' onClick={() => scrollToTarget('about')}>
         <span >About Me</span>
       </div>
-      <div className='menu-text' onClick={() => scrollToTarget('skills')}>
+      <div className='menu- transition-colors' onClick={() => scrollToTarget('skills')}>
         <span >Skills</span>
       </div>
-      <div className='menu-text' onClick={() => scrollToTarget('works')}>
+      <div className='menu- transition-colors' onClick={() => scrollToTarget('works')}>
         <span >My Works</span>
       </div>
-      <div className='menu-text' onClick={() => scrollToTarget('reviews')}>
+      <div className='menu- transition-colors' onClick={() => scrollToTarget('reviews')}>
         <span >Reviews</span>
       </div>
-      <div className='menu-text' onClick={() => scrollToTarget('contacts')}>
+      <div className='menu- transition-colors' onClick={() => scrollToTarget('contacts')}>
         <span >Contact Me</span>
       </div>
     </div>
@@ -52,4 +53,4 @@ function General() {
 };
 
 
-export default General
+export default Navigation;

@@ -1,0 +1,311 @@
+@media only screen and (min-width: 768px) {
+    .contacts {
+        margin: 10px 30px 40px 70px;
+        display: flex;
+        border-radius: 0 0 19px 19px ;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contacts-container {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 50px;
+    }
+
+    .socials {
+        padding-top: 20px;
+        border-radius: 15px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .avatar-pic2 {
+        height: 100px;
+        width: 100px;
+    }
+
+    .cont-icon {
+        height: 30px;
+    }
+
+    .avatar-contact-pic {
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .my-contacts {
+        padding-bottom: 10px;
+    }
+
+    .social-media {
+        width: 300px;
+        justify-content: space-around;
+        padding-left: 50px;
+    }
+
+
+    .social-icon {
+        padding-right: 30px;
+        
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .wa-number {
+        padding-left: 4px;
+        margin-right: 6px;
+    }
+
+    .email {
+        flex: 1;
+        margin-left: 60px;
+        margin-right: 90px;
+        width: 446px;
+    }
+
+    .email-container {
+        padding: 9px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .my-contact-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-me {
+        padding: 10px;
+    }
+
+    .em-en-sub {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sender-email input{
+        height: 26px;
+        margin-left: 3px;
+        margin-bottom: 3px;
+        border-radius: 7px;
+        border: 0.5px solid rgb(76, 53, 76);
+    }
+
+    .name-input {
+        width: 80%;
+    }
+
+    .sender-subject {
+        height: 26px;
+        margin-left: 3px;
+        border-radius: 7px;
+        border: .5px solid gray;
+    }
+
+    .message {
+        overflow-y: auto;
+        vertical-align: top;
+        height: 80px;
+        resize: vertical;
+        margin-top: 4px;
+    }
+
+    .send {
+        display: flex;
+        justify-content: flex-end;
+        width: 53px;
+        margin-left: 87%;
+        margin-top: -21px;
+    }
+
+    .email-footer {
+        margin-top: 15px;
+        margin: 15px 5% 0 2%;
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid purple;
+    }
+
+}
+
+/* ---------FOR SMALL DEVICES / ANDROID---------*/
+@media only screen and (max-width: 768px) {
+    .contacts {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts-container {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socials {
+        font-size: .7rem;
+        margin: 4px 40px;
+        padding: 20px 0;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.006);
+    }
+
+    .avatar-pic2 {
+        padding: 0 ;
+        height: 8dvh;
+        width: 8dvh;
+    }
+
+    .cont-icon {
+        margin-top: 20px;
+        height: 30px;
+    }
+
+    .avatar-contact-pic {
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .my-contacts {
+        padding-bottom: 10px;
+    }
+
+    .social-icon {
+        padding-right: 30px;
+        
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .wa-number {
+        padding-left: 4px;
+        margin-right: 6px;
+    }
+
+    .email-container {
+        font-size: .7rem;
+        margin: 4px 25px;
+        padding: 20px 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-container input, textarea {
+        background-color: #ffffff;
+    }
+
+    .name-input {
+        background-color: #ffffff;
+    }
+
+    .my-contact-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-me {
+        padding: 10px;
+    }
+
+    .sender-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-input {
+        height: 26px;
+        background-color: #ffffff;
+    }
+
+    .em-en-sub {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sender-email {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-input{
+        height: 22px;
+        padding: 3px;
+        margin-bottom: 3px;
+        border-radius: 7px;
+    }
+
+    .sender-subject {
+        width: 50%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sender-subject input{
+        height: 26px;
+        margin-left: 3px;
+        border-radius: 7px;
+        border: .5px solid gray;
+    }
+
+    .message {
+        width: 100%;
+        overflow-y: auto;
+        vertical-align: top;
+        height: 80px;
+        resize: vertical;
+        margin-top: 4px;
+    }
+
+    .message-container {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        z-index: inherit;
+    }
+
+    .message-container input {
+        position: absolute;
+        width: 53px;
+        cursor: pointer;
+        bottom: 3px;
+        right: -3px;
+        cursor: pointer;
+        border-radius: 3px;
+        background-color: #341d4b;
+        border: 1px purple solid;
+        color: #ffffff;
+    }
+
+    .email-footer {
+        margin: 15px 5% 0 2%;
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid #e4e0e4;
+        color: #ffffff;
+    }
+    
+}

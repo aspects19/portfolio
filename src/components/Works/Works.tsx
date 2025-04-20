@@ -1,3 +1,5 @@
+import './Works.css'; 
+import React from 'react';
 
 const Project = ({ title, moreInfo, link, image}) => {
  
