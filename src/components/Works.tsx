@@ -15,20 +15,16 @@ const Project = ({ title, tags, description, link, image}) => {
          ))}
         </div>
         <h2 className="text-xl font-bold mb-3 hover:text-blue-400 transition-colors">
-            <a href={title} target="_blank">{title}</a>
+            <a href={link} target="_blank">{title}</a>
         </h2>
         <p className="text-gray-400 mb-4">{description}</p>
-        <div className="flex items-center">
-            <img src={image}
-                 alt={title}
-                 className="w-10 h-10 rounded-full mr-3"/>
-            <div>
-                <div className="font-medium">{link}</div>
-                <div className="text-sm text-gray-400">
-                    12:44 pm
-                </div>
-            </div>
-        </div>
+        <a href={link} target='_blank' className="flex items-center">
+            <img src={"/assets/avatar.jpg"}
+              alt={title}
+              className="w-10 h-10 rounded-full mr-3"
+            />
+            <span className="font-medium  hover:text-blue-400 transition-colors">{link}</span>
+        </a>
     </div>
 </div>
   );
