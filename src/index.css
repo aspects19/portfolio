@@ -1,4 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
+html {
+    height: 100%;
+    background-color: #000000;
+}
