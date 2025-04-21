@@ -3,7 +3,7 @@ import React from 'react';
 const Project = ({ title, tags, description, link, image}) => {
 
   return (
-    <div className=" max-w-[440px] bg-gray-900/50 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500/50 transition-all duration-300" data-aos="fade-up">
+    <div className=" max-w-[440px] bg-gray-900/50 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500/50 hover:scale-[103%] transition-all ease-in-out duration-300" >
       <img src={image || 'default-image.jpg'}
         alt={title}
         className="w-full h-48 object-cover"/>
@@ -46,8 +46,8 @@ function Works() {
 
   return (
     <div className='flex flex-col px-7' id='works'>
-      <h1 className='w-full font-bold text-center hover:underline cursor-pointer'>My creations</h1>
-      <div className='m-2 grid rounded-[4px] grid-cols-1 sm:grid-cols-2  gap-5 mx-auto'>
+      <h1 className=' w-full text-center text-2xl pb-2 font-bold hover:underline cursor-pointer'>My creations</h1>
+      <div className='m-2 grid rounded-xl grid-cols-1 sm:grid-cols-2  gap-8 mx-auto'>
         {projects.map((project, index) => (
           <Project key={index} title={project.title} description={project.moreInfo} link={project.link} image={project.image} tags={project.tags}/>
         ))}
