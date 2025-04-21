@@ -1,10 +1,10 @@
 import React from 'react';
-import General from './components/Navigation/Navigation.tsx';
-import Home from './components/Home/Home.tsx';
-import About from './components/About/About.tsx';
-import Skills from './components/Skills/Skills.tsx';
-import Works from './components/Works/Works.tsx';
-import Contacts from './components/Contacts/Contacts.tsx';
+import General from './components/Navigation.tsx';
+import Home from './components/Home.tsx';
+import About from './components/About.tsx';
+import Skills from './components/Skills.tsx';
+import Works from './components/Works.tsx';
+import Contacts from './components/Contacts.tsx';
 
 
 function App() {
