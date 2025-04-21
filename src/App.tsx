@@ -5,7 +5,7 @@ import About from './components/About/About.tsx';
 import Skills from './components/Skills/Skills.tsx';
 import Works from './components/Works/Works.tsx';
 import Contacts from './components/Contacts/Contacts.tsx';
-import './App.css';
+
 
 function App() {
     return (
