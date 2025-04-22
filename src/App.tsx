@@ -6,7 +6,6 @@ import Skills from './components/Skills.tsx';
 import Works from './components/Works.tsx';
 import Contacts from './components/Contacts.tsx';
 
-
 function App() {
     return (
         <div className="app bg-black text-gray-200 pl-3 ">
