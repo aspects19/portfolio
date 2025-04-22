@@ -34,7 +34,7 @@ const Project = ({ title, tags, description, link, image}) => {
 function Works() {
   const projects = [
     { title: 'AMD', moreInfo: 'A WhatsApp bot made in Javascript using @whiskeysockets/baileys library that has many functions', link: "https://github.com" , image: "/backgrounds/whatsapp.png", tags: ["react", "python"]},
-    { title: "My Portofolio", moreInfo: 'My own portofolio developed using React', link: "https://github.com" , image: "/backgrounds/portofolio.png", tags: ["react", "python"]},
+    { title: "My portfolio", moreInfo: 'My own portfolio developed using React', link: "https://github.com" , image: "/backgrounds/portfolio.png", tags: ["react", "python"]},
     { title: 'Mobile Money Wallet', moreInfo: 'A mobile money project written in C for my school project', link: "https://github.com" , image: "/backgrounds/wallet.png", tags: ["react", "python"]},
     { title: 'Recipe web', moreInfo: 'A recipe website created using HTML css and javascript', link: "https://github.com", image: "/backgrounds/recipe.jpg", tags: ["react", "python"] },
     { title: 'TestGram', moreInfo: "A Telegram bot written in python using telegram,s python wrapper library PyTelegramAPI(telebot)", link: "https://github.com" , image: "/backgrounds/tele.jpg", tags: ["react", "python"]},
