@@ -24,12 +24,12 @@ function Home() {
         return (
             <motion.div
             key={index}
-            initial={{ rotateX: 90, opacity: 0 }}
-            animate={{ rotateX: 0, opacity: 1 }}
-            exit={{ rotateX: -90, opacity: 0 }}
+            initial={{ rotateX: 90,opacity: 0 }}
+            animate={{ rotateX: 0, opacity: 1}}
+            exit={{ rotateX: 90, opacity: 0}}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="h-10 text-3xl text-gray-700 text-center origin-bottom"
-            style={{ perspective: 800 }}
+            className="h-10 text-2xl text-gray-700 text-center origin-bottom"
+            style={{ perspective: 1 }}
             >
             {roles[index]}
             </motion.div>
