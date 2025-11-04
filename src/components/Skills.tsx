@@ -1,31 +1,32 @@
-import { Code2, FileCode, Palette, Smartphone } from 'lucide-react';
 import { motion } from 'motion/react';
-import { BsWebcamFill } from 'react-icons/bs';
-import { IoPhonePortrait } from 'react-icons/io5';
+import { FaFileCode } from 'react-icons/fa6';
+import { IoCodeSlash } from 'react-icons/io5';
+import { MdPalette } from 'react-icons/md';
+import { RiSmartphoneFill } from 'react-icons/ri';
 
 
 function Skills() {
   const skillsData = [
     {
-      icon: Code2,
+      icon: IoCodeSlash,
       title: "Web Development",
       description:
         "I create websites and applications on the internet using Javascript frameworks.",
     },
     {
-      icon: Palette,
+      icon: MdPalette,
       title: "Web Design",
       description:
         "I design aesthetically pleasing interfaces for websites for enhanced user experience and engagement.",
     },
     {
-      icon: Smartphone,
+      icon: RiSmartphoneFill,
       title: "Mobile Apps Development",
       description:
         "I develop software applications tailored for mobile devices using Flutter.",
     },
     {
-      icon: FileCode,
+      icon: FaFileCode,
       title: "Bash Scripting",
       description:
         "I am skilled in writing scripts that automate tasks on Unix-like operating systems using the Bash interface.",
