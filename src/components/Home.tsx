@@ -43,11 +43,12 @@ function Home() {
       transition={{ duration: 1, ease: "easeOut" }}
       className="h-[500px] flex items-center justify-center"
     >
-      <div className=" absolute top-60 left-20 h-10 transition-all duration-900 animate-pulse w-40 blur-[60px] bg-white/60"></div>
-      <div className=" absolute top-30 right-20 h-10 transition-all duration-1000 animate-pulse w-40 blur-[70px] bg-white"></div>
+      
     
-      <div className="flex flex-col items-center gap-10">
+      <div className="flex relative flex-col items-center gap-10">
         <div className="text-left flex flex-col gap-2">
+          <div className=" absolute hidden md:block top-10/12 md:-left-[55%] h-12 transition-all duration-900 animate-pulse w-40 blur-[80px] bg-white/60"></div>
+          <div className=" absolute top-10  md:-top-16 left-10 md:left-[99%] h-16 md:h-12 transition-all duration-1000 animate-pulse w-40 blur-[100px] md:blur-[80px] bg-white"></div>
           <h1 className="text-5xl text-gray-400">
             Hi<span className="text-6xl">👋</span>
           </h1>

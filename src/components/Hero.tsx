@@ -1,6 +1,4 @@
 import { motion } from "motion/react";
-import React from "react";
-import { FiZap } from "react-icons/fi";
 
 function Hero() {
     const heroMetrics = [
@@ -28,7 +26,7 @@ function Hero() {
                         
                         {/* Main Card */}
                         <div className="relative bg-white/5 dark:bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-white/20 dark:border-neutral-600/50 hover:border-white/30 dark:hover:border-neutral-500/60 transition-all duration-500 hover:scale-105  shadow-lg text-center">
-                            <div className={`inline-flex p-3 rounded-2xl bg-gradient-to-r ${metric.gradient} shadow-lg group-hover:rotate-12 transition-all duration-500 mb-4`}>
+                            <div className={`inline-flex p-3 rounded-2xl bg-linear-to-r ${metric.gradient} shadow-lg group-hover:rotate-12 transition-all duration-500 mb-4`}>
                             {/* <Icon className="w-6 h-6 text-white" /> */}
                             </div>
                             <p className={`text-3xl font-black ${metric.gradient.includes('blue') ? 'text-blue-300' : metric.gradient.includes('purple') ? 'text-purple-300' : metric.gradient.includes('green') ? 'text-green-300' : 'text-orange-300'} mb-2 drop-shadow-sm`}>
