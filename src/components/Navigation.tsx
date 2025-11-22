@@ -4,7 +4,7 @@ import { IoMdClose } from 'react-icons/io';
 import { BiHome, BiUser, BiCodeAlt, BiBriefcase, BiMessageSquareDetail, BiPhone } from 'react-icons/bi';
 
 function Navigation() {
-  const IconSize = 20;
+  const IconSize = 23;
   const [collapsed, setCollapsed] = useState(false);
 
   const handleCollapse = () => setCollapsed(!collapsed);
@@ -27,8 +27,7 @@ function Navigation() {
   ];
 
   return (
-    <div className="fixed top-2 left-1/2 transform -translate-x-1/2 z-50 border border-gray-500 rounded-lg bg-[#100825aa] backdrop-blur-md">
-      {/* Top bar container */}
+    <div className="fixed top-10 left-1/2 transform -translate-x-1/2 z-50 border border-gray-500 rounded-lg bg-[#100825aa] backdrop-blur-md">
       <div className="flex justify-between items-center p-2 md:hidden">
         <div className="flex-1" />
         <div className="z-50 cursor-pointer" onClick={handleCollapse}>
@@ -44,10 +43,11 @@ function Navigation() {
             : 'hidden md:flex flex-row gap-6 p-2 justify-center items-center'
         }`}
       >
+        <span>Amenya |</span>
         {navItems.map(({ id, icon }) => (
           <div
             key={id}
-            className="transition-colors cursor-pointer hover:text-blue-300"
+            className="transition-colors m-1 cursor-pointer hover:text-blue-300"
             onClick={() => scrollToTarget(id)}
           >
             {icon}
