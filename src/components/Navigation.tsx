@@ -1,56 +1,90 @@
-import React, { useState } from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { IoMdClose } from 'react-icons/io';
-import { BiHome, BiUser, BiCodeAlt, BiBriefcase, BiMessageSquareDetail, BiPhone } from 'react-icons/bi';
+import React, { useState, useEffect } from "react";
+import {
+  BiHome,
+  BiUser,
+  BiCodeAlt,
+  BiBriefcase,
+  BiPhone,
+} from "react-icons/bi";
+
+const IconSize = 23;
+
+const navItems = [
+  { id: "home", label: "Home", icon: <BiHome size={IconSize} /> },
+  { id: "about", label: "About", icon: <BiUser size={IconSize} /> },
+  { id: "works", label: "Works", icon: <BiBriefcase size={IconSize} /> },
+  { id: "skills", label: "Skills", icon: <BiCodeAlt size={IconSize} /> },
+  { id: "contacts", label: "Contact", icon: <BiPhone size={IconSize} /> },
+];
 
 function Navigation() {
-  const IconSize = 23;
-  const [collapsed, setCollapsed] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("home");
 
-  const handleCollapse = () => setCollapsed(!collapsed);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+
+      {
+        root: null,
+        rootMargin: "-10% 0px -80% 0px",
+        threshold: 0,
+      }
+    );
+
+    navItems.forEach(({ id }) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const scrollToTarget = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setCollapsed(false);
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
-  const navItems = [
-    { id: 'home', icon: <BiHome size={IconSize} /> },
-    { id: 'about', icon: <BiUser size={IconSize} /> },
-    { id: 'skills', icon: <BiCodeAlt size={IconSize} /> },
-    { id: 'works', icon: <BiBriefcase size={IconSize} /> },
-    { id: 'reviews', icon: <BiMessageSquareDetail size={IconSize} /> },
-    { id: 'contacts', icon: <BiPhone size={IconSize} /> },
-  ];
-
   return (
-    <div className="fixed top-10 left-1/2 transform -translate-x-1/2 z-50 border border-gray-500 rounded-lg bg-[#100825aa] backdrop-blur-md">
-      <div className="flex justify-between items-center p-2 md:hidden">
-        <div className="flex-1" />
-        <div className="z-50 cursor-pointer" onClick={handleCollapse}>
-          {collapsed ? <IoMdClose size={IconSize} /> : <RxHamburgerMenu size={IconSize} />}
-        </div>
-      </div>
-
-      {/* Navigation links */}
-      <div
-        className={`${
-          collapsed
-            ? 'fixed flex flex-col justify-around text-white items-center backdrop-blur-xs top-0 left-0 right-0 bottom-0 py-24 font-bold text-xl cursor-pointer'
-            : 'hidden md:flex flex-row gap-6 p-2 justify-center items-center'
-        }`}
-      >
-        <span>Amenya |</span>
-        {navItems.map(({ id, icon }) => (
+    <div className="fixed top-10 left-1/2 transform -translate-x-1/2 z-50 border border-white/30 rounded-full backdrop-blur-md bg-white/5 bg-opacity-50">
+      <div className="flex flex-row p-1 items-center gap-1">
+        {navItems.map(({ id, label, icon }) => (
           <div
             key={id}
-            className="transition-colors m-1 cursor-pointer hover:text-blue-300"
+            className={`flex flex-row items-center cursor-pointer rounded-full p-2 transition-all duration-300 ease-in-out ${
+              activeSection === id ? "bg-white/10" : "hover:bg-white/5"
+            }`}
             onClick={() => scrollToTarget(id)}
           >
-            {icon}
+            <div
+              className={`transition-colors ${
+                activeSection === id ? "text-blue-300" : "text-white"
+              }`}
+            >
+              {icon}
+            </div>
+            <div
+              className={`grid transition-[grid-template-columns] duration-300 ease-in-out ${
+                activeSection === id ? "grid-cols-[1fr]" : "grid-cols-[0fr]"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <span
+                  className={`pl-2 text-white text-sm font-medium transition-opacity duration-300 whitespace-nowrap inline-block delay-75 ${
+                    activeSection === id ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  {label}
+                </span>
+              </div>
+            </div>
           </div>
         ))}
       </div>
