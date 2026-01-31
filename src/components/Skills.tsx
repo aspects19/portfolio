@@ -150,15 +150,15 @@ function Skills() {
                   <span
                     key={skill.name}
                     className={`
-                                    inline-flex items-center gap-2 rounded-lg px-4 py-1 
-                                    ${skill.color} ${skill.bg}/10 border ${
-                                      skill.border
-                                    }/30 
-                                    font-mono transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-${skill.color.replace(
-                                      "text-",
-                                      "",
-                                    )}/30
-                                `}
+                                  inline-flex items-center gap-2 rounded-lg px-4 py-1 
+                                  ${skill.color} ${skill.bg}/10 border ${
+                                    skill.border
+                                  }/30 
+                                  font-mono transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-${skill.color.replace(
+                                    "text-",
+                                    "",
+                                  )}/30
+                    `}
                   >
                     <skill.icon className="text-lg" />
                     {skill.name}

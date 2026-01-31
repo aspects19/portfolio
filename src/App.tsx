@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import General from "./components/Navigation.tsx";
 import About from "./components/About.tsx";
 import Skills from "./components/Skills.tsx";
@@ -8,7 +7,7 @@ import Home from "./components/Home.tsx";
 
 function App() {
   return (
-    <div className="app bg-[#010116] text-gray-200 pl-3 pt-12 ">
+    <div className="app bg-[#010116] text-gray-200 pl-3 pt-12 max-w-full">
       <General />
       <Home />
       <About />

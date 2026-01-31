@@ -48,7 +48,7 @@ export function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-            className="inline-block px-4 py-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-cyan-400 mb-4"
+            className="inline-block py-2 px-4 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-cyan-400 mb-4"
           >
             About Me
           </motion.span>
@@ -65,7 +65,7 @@ export function About() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6  max-w-2xl items-center mx-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6  max-w-2xl items-center sm:mx-6 ">
           {features.map((feature, index) => (
             <motion.div
               key={index}
