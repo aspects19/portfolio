@@ -39,7 +39,7 @@ function Home() {
   return (
     <motion.section
       id="home"
-      className="h-[500px] flex items-center justify-center"
+      className="h-125 flex items-center justify-center"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
