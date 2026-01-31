@@ -20,6 +20,7 @@ const projects = [
     link: "https://github.com/aspects19kyru",
     site: "https://kyru.amenya.dev",
     tags: ["rust", "GTK", "gallery"],
+    image: "/assets/recipe-web.png"
   },
   {
     title: "Tuno",
@@ -110,11 +111,16 @@ const Work: React.FC<{ project: ProjectProps }> = ({ project }) => {
       whileHover={{ y: -5 }}
       className="group relative h-64 md:h-80 w-full py-10 px-6 rounded-2xl overflow-hidden border border-white/10 shadow-xl"
     >
-      <div
-        className={`absolute inset-0 bg-linear-to-br from-slate-800 to-slate-900 opacity-100 transition-transform duration-500 group-hover:scale-105`}
+       <img
+        src={project.image || "/assets/recipe-web.png"}
+        alt={project.title}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
 
-      <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40 backdrop-blur-sm">
+      <div className="absolute inset-0 bg-linear-to-br from-black/80 to-[#010116]/20" />
+
+
+      <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#010116]/40 backdrop-blur-sm">
         <motion.a
           href={project.link}
           whileHover={{ scale: 1.1 }}

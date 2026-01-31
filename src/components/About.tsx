@@ -44,8 +44,10 @@ export function About() {
           className="text-center mb-16"
         >
           <motion.span
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
             className="inline-block px-4 py-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-cyan-400 mb-4"
           >
             About Me

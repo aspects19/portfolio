@@ -9,7 +9,7 @@
     "off": "vite --host --offline",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "yarn run build",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
