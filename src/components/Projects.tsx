@@ -17,7 +17,7 @@ const projects = [
     category: "Application",
     description:
       "A native Linux Gallery app for managing and viewing Pictures and videos on your workstation",
-    link: "https://github.com/aspects19kyru",
+    link: "https://github.com/aspects19/kyru",
     site: "https://kyru.amenya.dev",
     tags: ["rust", "GTK", "gallery"],
     image: "/assets/recipe-web.png"
@@ -27,7 +27,7 @@ const projects = [
     category: "Mobile",
     description:
       "A native Linux Gallery app ",
-    link: "https://github.com/aspects19tuno",
+    link: "https://github.com/aspects19/tuno",
     site: "https://tuno.amenya.dev",
     tags: ["kotlin", "music", "compose"],
   },
@@ -36,7 +36,7 @@ const projects = [
     category: "Application",
     description:
       "Linux native WhatsApp client written in Rust and Webkit",
-    link: "https://github.com/aspects19kwanah",
+    link: "https://github.com/aspects19/kwanah",
     site: "https://kwanah.amenya.dev",
     tags: ["Rust", "webkit","GTK"],
   },
@@ -45,7 +45,7 @@ const projects = [
     category: "AI and ML",
     description:
       "Machine learning model to accelerate diagnosis of rare diseases",
-    link: "https://github.com/aspects19quwa",
+    link: "https://github.com/aspects19/quwa",
     site: "https://quwa.amenya.dev",
     tags: ["rust", "axum", "rig"],
   },
@@ -54,7 +54,7 @@ const projects = [
     category: "Application",
     description:
       "An assistant to plan, guide and help you study more efficiently",
-    link: "https://github.com/aspects19studylux",
+    link: "https://github.com/aspects19/studylux",
     site: "https://studylux.amenya.dev",
     tags: ["Rust", "GTK"],
   },
@@ -62,7 +62,7 @@ const projects = [
     title: "Gemisave",
     category: "web-extension",
     description: "Keep your Gemini chats without allowing them to use it in Model training",
-    link: "https://github.com/aspects19gemisave",
+    link: "https://github.com/aspects19/gemisave",
     site: "https://gemisave.amenya.dev", //TODO: Firefox link
     tags: ["javascript"],
   },
@@ -70,7 +70,7 @@ const projects = [
     title: "My portfolio",
     category: "web",
     description: "My own portfolio developed using React",
-    link: "https://github.com/aspects19portfolio",
+    link: "https://github.com/aspects19/portfolio",
     site: "https://amenya.dev",
     tags: ["react"],
   },
@@ -78,7 +78,7 @@ const projects = [
     title: "Recipe web",
     category: "web",
     description: "A recipe website created using HTML css and javascript",
-    link: "https://github.com/aspects19mrecipe",
+    link: "https://github.com/aspects19/mrecipe",
     site: "https://mrecipe.amenya.dev",
     tags: ["react", "python"],
   },
@@ -86,7 +86,7 @@ const projects = [
     title: "Hitimu",
     category: "web",
     description: "Easier access to study material within campus",
-    link: "https://github.com/aspects19/hitimu",
+    link: "https://github.com/aspects19//hitimu",
     site: "https://hitimu.vercel.app",
     tags: ["react", "appwrite"],
   },
@@ -95,7 +95,7 @@ const projects = [
     category: "Mobile",
     description:
       "Carpool easily within Campus",
-    link: "https://github.com/aspects19travvy",
+    link: "https://github.com/aspects19/travvy",
     tags: ["dart", "rust"],
   }
 ];

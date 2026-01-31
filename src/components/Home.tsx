@@ -98,7 +98,7 @@ function Home() {
           className="flex gap-6 mt-4"
         >
           <a
-            href="https://github.com/aspects19"
+            href="https://github.com/aspects19/"
             className="hover:text-blue-500 transition-colors"
           >
             <IoLogoGithub size={40} />
