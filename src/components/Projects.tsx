@@ -8,6 +8,7 @@ interface ProjectProps {
   tags: string[];
   description: string;
   link: string;
+  site?: string;
   image?: string;
 }
 
@@ -20,7 +21,7 @@ const projects = [
     link: "https://github.com/aspects19/kyru",
     site: "https://kyru.amenya.dev",
     tags: ["rust", "GTK", "gallery"],
-    image: "/assets/recipe-web.png"
+    
   },
   {
     title: "Tuno",
@@ -73,6 +74,7 @@ const projects = [
     link: "https://github.com/aspects19/portfolio",
     site: "https://amenya.dev",
     tags: ["react"],
+    image: "/assets/portfolio.png"
   },
   {
     title: "Recipe web",
@@ -81,6 +83,7 @@ const projects = [
     link: "https://github.com/aspects19/mrecipe",
     site: "https://mrecipe.amenya.dev",
     tags: ["react", "python"],
+    image: "/assets/recipe-web.png"
   },
   {
     title: "Hitimu",
@@ -122,7 +125,7 @@ const Work: React.FC<{ project: ProjectProps }> = ({ project }) => {
 
       <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#010116]/40 backdrop-blur-sm">
         <motion.a
-          href={project.link}
+          href={project.site}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           className="p-4 bg-white/20 backdrop-blur-md rounded-full text-white hover:bg-white/30 transition-colors"
