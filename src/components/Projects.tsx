@@ -14,32 +14,24 @@ interface ProjectProps {
 
 const projects = [
   {
-    title: "Kyru",
+    title: "Kwanah",
     category: "Application",
     description:
-      "A native Linux Gallery app for managing and viewing Pictures and videos on your workstation",
-    link: "https://github.com/aspects19/kyru",
-    site: "https://kyru.amenya.dev",
-    tags: ["rust", "GTK", "gallery"],
-    
+      "Fast, memory safe WhatsApp Linux native client written in GTK, Rust and Webkit",
+    link: "https://github.com/aspects19/kwanah",
+    site: "https://kwanah.amenya.dev",
+    tags: ["Rust", "webkit","GTK"],
+    image: "/assets/kwanah.png",
   },
   {
     title: "Tuno",
     category: "Mobile",
     description:
-      "A native Linux Gallery app ",
+      "An lightweight aesthetic local music player for Android ",
     link: "https://github.com/aspects19/tuno",
     site: "https://tuno.amenya.dev",
     tags: ["kotlin", "music", "compose"],
-  },
-  {
-    title: "Kwanah",
-    category: "Application",
-    description:
-      "Linux native WhatsApp client written in Rust and Webkit",
-    link: "https://github.com/aspects19/kwanah",
-    site: "https://kwanah.amenya.dev",
-    tags: ["Rust", "webkit","GTK"],
+    image: "/assets/tuno.png",
   },
   {
     title: "Quwa",
@@ -49,6 +41,43 @@ const projects = [
     link: "https://github.com/aspects19/quwa",
     site: "https://quwa.amenya.dev",
     tags: ["rust", "axum", "rig"],
+    image: "/assets/quwa.png",
+  },
+  {
+    title: "Hitimu",
+    category: "web",
+    description: "Easier access to study material within campus",
+    link: "https://github.com/aspects19//hitimu",
+    site: "https://hitimu.vercel.app",
+    tags: ["react", "appwrite"],
+    image: "/assets/hitimu.png"
+    
+  },
+  {
+    title: "Recipe web",
+    category: "web",
+    description: "A recipe website created using HTML css and javascript",
+    link: "https://github.com/aspects19/mrecipe",
+    site: "https://mrecipe.amenya.dev",
+    tags: ["react", "python"],
+    image: "/assets/recipe-web.png"
+  },
+  {
+    title: "My portfolio",
+    category: "web",
+    description: "My own portfolio developed using React",
+    link: "https://github.com/aspects19/portfolio",
+    site: "https://amenya.dev",
+    tags: ["react"],
+    image: "/assets/portfolio.png"
+  },
+  {
+    title: "Travvy",
+    category: "Mobile",
+    description:
+      "Carpool easily within Campus",
+    link: "https://github.com/aspects19/travvy",
+    tags: ["dart", "rust"],
   },
   {
     title: "StudyLux",
@@ -68,39 +97,15 @@ const projects = [
     tags: ["javascript"],
   },
   {
-    title: "My portfolio",
-    category: "web",
-    description: "My own portfolio developed using React",
-    link: "https://github.com/aspects19/portfolio",
-    site: "https://amenya.dev",
-    tags: ["react"],
-    image: "/assets/portfolio.png"
-  },
-  {
-    title: "Recipe web",
-    category: "web",
-    description: "A recipe website created using HTML css and javascript",
-    link: "https://github.com/aspects19/mrecipe",
-    site: "https://mrecipe.amenya.dev",
-    tags: ["react", "python"],
-    image: "/assets/recipe-web.png"
-  },
-  {
-    title: "Hitimu",
-    category: "web",
-    description: "Easier access to study material within campus",
-    link: "https://github.com/aspects19//hitimu",
-    site: "https://hitimu.vercel.app",
-    tags: ["react", "appwrite"],
-  },
-  {
-    title: "Travvy",
-    category: "Mobile",
+    title: "Kyru",
+    category: "Application",
     description:
-      "Carpool easily within Campus",
-    link: "https://github.com/aspects19/travvy",
-    tags: ["dart", "rust"],
-  }
+      "A native Linux Gallery app for managing and viewing Pictures and videos on your workstation",
+    link: "https://github.com/aspects19/kyru",
+    site: "https://kyru.amenya.dev",
+    tags: ["rust", "GTK", "gallery"],
+    
+  },
 ];
 
 const Work: React.FC<{ project: ProjectProps }> = ({ project }) => {
@@ -115,7 +120,7 @@ const Work: React.FC<{ project: ProjectProps }> = ({ project }) => {
       className="group relative h-64 md:h-80 w-full py-10 px-6 rounded-2xl overflow-hidden border border-white/10 shadow-xl"
     >
        <img
-        src={project.image || "/assets/recipe-web.png"}
+        src={project.image || "/assets/default.png"}
         alt={project.title}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
